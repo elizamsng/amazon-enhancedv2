@@ -101,3 +101,47 @@ This file collates all user prompts from this session in chronological order.
 ## Prompt 6 — Save to New GitHub Repository
 
 > save to new github repository
+
+---
+
+## Prompt 7 — Import from GitHub Repository
+
+> This app was imported from GitHub repository whyyinsy/amazon_enhanced.
+
+---
+
+## Prompt 8 — UX & Aesthetic Improvements (6 Usability Heuristics)
+
+> 1. visibility of sytem status  
+> - lock the system bar (to reduce the user from scrolling)  
+> 2. Match between system and real world -> product name should be more user friendly  
+> 3. Consistency (add to wishlist to be a heart emoji, cart symbol to align)  
+> 4. Minimalist deisgn (remove product long name)  
+> 5. flexibility and efficiency of use (to include other colours and specs as options within same product page - ie. user can toggle black or white mouse)  
+> 6. Aesthetic deisgb - to have visual blocks for the product specs, to have the price in line and eye catching  
+>  
+> changes to be made
+
+---
+
+## Prompt 9 — Locked Top Navigation Task Bar
+
+> All Categories  
+> Black Friday Deals  
+> Specifications  
+> About Viper V4 Pro  
+> Customer Reviews  
+> at the top task bar to be locked as a navigation
+
+---
+
+## Prompt 10 — Undo Cart Deletes
+
+> undo the deletes in the cart
+
+---
+
+## Prompt 11 — Collate Prompts into `PROMPTS.md`
+
+> collate all the promts into a PROMPTS.md
+
