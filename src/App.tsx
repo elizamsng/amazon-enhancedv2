@@ -43,6 +43,7 @@ import {
   InfoModal,
 } from './components/ActionModals';
 import { SafeImage } from './components/SafeImage';
+import { DiscussionEmbed } from 'disqus-react';
 
 function SpecIcon({ iconKey }: { iconKey: ProductSpecBlock['iconKey'] }) {
   const cls = 'w-4 h-4 text-[#007185]';
@@ -382,6 +383,19 @@ export default function App() {
   };
 
   const totalRatingsCount = 242 + (reviews.length - INITIAL_REVIEWS.length);
+
+  const disqusConfig = useMemo(
+    () => ({
+      url:
+        typeof window !== 'undefined'
+          ? `${window.location.origin}${window.location.pathname}`
+          : undefined,
+      identifier: activeProduct.id,
+      title: activeProduct.title,
+      language: 'en',
+    }),
+    [activeProduct.id, activeProduct.title]
+  );
 
   return (
     <div id="top" className="min-h-screen flex flex-col bg-[#EAEDED] text-neutral-900">
@@ -987,6 +1001,11 @@ export default function App() {
           averageRating={activeProduct.rating}
           totalRatingsCount={isViperDefault ? totalRatingsCount : activeProduct.reviewCount}
           onOpenWriteReview={() => setReviewModalOpen(true)}
+        />
+
+        <DiscussionEmbed
+          shortname='amazon-m7bdqgc0td'
+          config={disqusConfig}
         />
       </main>
 
